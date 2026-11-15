@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Marck+Script&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="media/img/cover.jpg">
-<link rel="stylesheet" href="style.css?v=13">
+<link rel="stylesheet" href="style.css?v=14">
 </head>
 <body class="locked">
 
@@ -124,27 +124,27 @@
 
     <div class="wall">
       <figure class="polaroid wide reveal" style="--r:-2.5deg" data-knot>
-        <img src="media/img/the-place.jpg" alt="" decoding="async" data-lb data-lb-group="places" data-cap="то самое место">
+        <img src="media/img/the-place.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="places" data-cap="то самое место">
         <figcaption>то самое место</figcaption>
       </figure>
       <figure class="polaroid reveal" style="--r:3deg" data-knot>
-        <img src="media/img/confess.jpg" alt="" decoding="async" data-lb data-lb-group="places" data-cap="местечко где я подумывал тебе признаться">
+        <img src="media/img/confess.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="places" data-cap="местечко где я подумывал тебе признаться">
         <figcaption>местечко где я подумывал тебе признаться</figcaption>
       </figure>
       <figure class="polaroid reveal" style="--r:-3.5deg" data-knot>
-        <img src="media/img/halloween.jpg" alt="" decoding="async" data-lb data-lb-group="places" data-cap="хелоуинский вайбик">
+        <img src="media/img/halloween.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="places" data-cap="хелоуинский вайбик">
         <figcaption>хелоуинский вайбик</figcaption>
       </figure>
       <figure class="polaroid reveal" style="--r:2deg" data-knot>
-        <img src="media/img/scam.jpg" alt="" decoding="async" data-lb data-lb-group="places" data-cap="скам зона">
+        <img src="media/img/scam.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="places" data-cap="скам зона">
         <figcaption>скам зона</figcaption>
       </figure>
       <figure class="polaroid reveal" style="--r:-2deg" data-knot>
-        <img src="media/img/goose.jpg" alt="" decoding="async" data-lb data-lb-group="places" data-cap="почти достали гуся((">
+        <img src="media/img/goose.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="places" data-cap="почти достали гуся((">
         <figcaption>почти достали гуся((</figcaption>
       </figure>
       <figure class="polaroid reveal" style="--r:3.5deg" data-knot>
-        <img src="media/img/luck.jpg" alt="" decoding="async" data-lb data-lb-group="places" data-cap="моментик когда потратила удачу на весь год">
+        <img src="media/img/luck.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="places" data-cap="моментик когда потратила удачу на весь год">
         <figcaption>моментик когда потратила удачу на весь год</figcaption>
       </figure>
     </div>
@@ -156,8 +156,8 @@
     <h2 class="h">рядом с нашим пляжиком<svg class="squiggle" viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M2 10 C 50 18, 90 2, 140 10 S 230 18, 298 8"/></svg></h2>
     <p class="hint">потяни ползунок в стороны</p>
     <div class="compare reveal" id="compare" data-knot style="--pos:50%">
-      <img src="media/img/streets-2.jpg" alt="" class="cmp-base" decoding="async">
-      <img src="media/img/streets-1.jpg" alt="" class="cmp-top" decoding="async">
+      <img src="media/img/streets-2.jpg" alt="" class="cmp-base" decoding="async" loading="lazy">
+      <img src="media/img/streets-1.jpg" alt="" class="cmp-top" decoding="async" loading="lazy">
       <span class="cmp-cap left">вайбик тех уличек</span>
       <span class="cmp-cap right">и еще немножко</span>
       <div class="cmp-handle"><span><svg><use href="#i-heart"/></svg></span></div>
@@ -168,12 +168,12 @@
   <section class="chapter" id="cinema">
     <h2 class="h">киношка<svg class="squiggle" viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M2 8 C 60 18, 120 0, 170 10 S 250 16, 298 10"/></svg></h2>
     <figure class="polaroid ticket reveal" style="--r:-3deg" data-knot>
-      <img src="media/img/cinema.jpg" alt="" decoding="async" data-lb data-lb-group="cinema" data-cap="наша первая киношка">
+      <img src="media/img/cinema.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="cinema" data-cap="наша первая киношка">
       <figcaption>наша первая киношка</figcaption>
     </figure>
     <div class="screen reveal" data-knot>
       <div class="screen-frame">
-        <video class="vid" src="media/vid/twilight.mp4#t=0.1" muted playsinline loop preload="metadata"></video>
+        <video class="vid" data-src="media/vid/twilight.mp4#t=0.1" muted playsinline loop preload="none"></video>
         <button class="snd" aria-label="звук"><svg><use href="#i-sound-off"/></svg></button>
         <i class="vbar"></i>
       </div>
@@ -187,13 +187,13 @@
     <h2 class="h">вкусняшки<svg class="squiggle" viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M2 12 C 40 4, 90 18, 150 8 S 250 4, 298 12"/></svg></h2>
     <p class="hint">свайпай карточки влево и вправо</p>
     <div class="stack" id="stack" data-knot>
-      <figure class="card"><img src="media/img/kfc-1.jpg" alt="" decoding="async" data-lb data-lb-group="food" data-cap="кфцшка"><figcaption>кфцшка</figcaption></figure>
-      <figure class="card"><img src="media/img/kfc-2.jpg" alt="" decoding="async" data-lb data-lb-group="food" data-cap="еще кфцшка"><figcaption>еще кфцшка</figcaption></figure>
-      <figure class="card"><img src="media/img/mojito.jpg" alt="" decoding="async" data-lb data-lb-group="food" data-cap="шикарненький мохито"><figcaption>шикарненький мохито</figcaption></figure>
-      <figure class="card"><img src="media/img/pizza.jpg" alt="" decoding="async" data-lb data-lb-group="food" data-cap="лучшая пицца в той кафешке"><figcaption>лучшая пицца в той кафешке</figcaption></figure>
-      <figure class="card"><img src="media/img/cafe.jpg" alt="" decoding="async" data-lb data-lb-group="food" data-cap="еще немного той кафешки"><figcaption>еще немного той кафешки</figcaption></figure>
-      <figure class="card"><img src="media/img/coffee.jpg" alt="" decoding="async" data-lb data-lb-group="food" data-cap="шикарный кофеечек"><figcaption>шикарный кофеечек</figcaption></figure>
-      <figure class="card"><img src="media/img/icecream.jpg" alt="" decoding="async" data-lb data-lb-group="food" data-cap="морожкоо"><figcaption>морожкоо</figcaption></figure>
+      <figure class="card"><img src="media/img/kfc-1.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="food" data-cap="кфцшка"><figcaption>кфцшка</figcaption></figure>
+      <figure class="card"><img src="media/img/kfc-2.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="food" data-cap="еще кфцшка"><figcaption>еще кфцшка</figcaption></figure>
+      <figure class="card"><img src="media/img/mojito.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="food" data-cap="шикарненький мохито"><figcaption>шикарненький мохито</figcaption></figure>
+      <figure class="card"><img src="media/img/pizza.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="food" data-cap="лучшая пицца в той кафешке"><figcaption>лучшая пицца в той кафешке</figcaption></figure>
+      <figure class="card"><img src="media/img/cafe.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="food" data-cap="еще немного той кафешки"><figcaption>еще немного той кафешки</figcaption></figure>
+      <figure class="card"><img src="media/img/coffee.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="food" data-cap="шикарный кофеечек"><figcaption>шикарный кофеечек</figcaption></figure>
+      <figure class="card"><img src="media/img/icecream.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="food" data-cap="морожкоо"><figcaption>морожкоо</figcaption></figure>
     </div>
     <div class="stack-nav">
       <button class="stack-btn" type="button" data-stack-dir="-1" aria-label="предыдущая карточка"><svg><use href="#i-chev"/></svg></button>
@@ -207,10 +207,10 @@
     <h2 class="h">видосики<svg class="squiggle" viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M2 10 C 40 18, 80 2, 130 12 S 220 4, 298 10"/></svg></h2>
     <p class="hint">один тап включит звук, два тапа отправят сердечко</p>
     <div class="reels" id="reels" data-knot>
-      <div class="reel"><video class="vid" src="media/vid/vesnyanka.mp4#t=0.1" muted playsinline loop preload="metadata"></video><button class="snd" aria-label="звук"><svg><use href="#i-sound-off"/></svg></button><p class="reel-cap">первая прогулочка по веснянке</p><i class="vbar"></i></div>
-      <div class="reel"><video class="vid" src="media/vid/ducks.mp4#t=0.1" muted playsinline loop preload="metadata"></video><button class="snd" aria-label="звук"><svg><use href="#i-sound-off"/></svg></button><p class="reel-cap">уточки на нашем пляжике</p><i class="vbar"></i></div>
-      <div class="reel"><video class="vid" src="media/vid/taxi.mp4#t=0.1" muted playsinline loop preload="metadata"></video><button class="snd" aria-label="звук"><svg><use href="#i-sound-off"/></svg></button><p class="reel-cap">таксишка под буду</p><i class="vbar"></i></div>
-      <div class="reel"><video class="vid" src="media/vid/believed.mp4#t=0.1" muted playsinline loop preload="metadata"></video><button class="snd" aria-label="звук"><svg><use href="#i-sound-off"/></svg></button><p class="reel-cap">тут они в себя поверили</p><i class="vbar"></i></div>
+      <div class="reel"><video class="vid" data-src="media/vid/vesnyanka.mp4#t=0.1" muted playsinline loop preload="none"></video><button class="snd" aria-label="звук"><svg><use href="#i-sound-off"/></svg></button><p class="reel-cap">первая прогулочка по веснянке</p><i class="vbar"></i></div>
+      <div class="reel"><video class="vid" data-src="media/vid/ducks.mp4#t=0.1" muted playsinline loop preload="none"></video><button class="snd" aria-label="звук"><svg><use href="#i-sound-off"/></svg></button><p class="reel-cap">уточки на нашем пляжике</p><i class="vbar"></i></div>
+      <div class="reel"><video class="vid" data-src="media/vid/taxi.mp4#t=0.1" muted playsinline loop preload="none"></video><button class="snd" aria-label="звук"><svg><use href="#i-sound-off"/></svg></button><p class="reel-cap">таксишка под буду</p><i class="vbar"></i></div>
+      <div class="reel"><video class="vid" data-src="media/vid/believed.mp4#t=0.1" muted playsinline loop preload="none"></video><button class="snd" aria-label="звук"><svg><use href="#i-sound-off"/></svg></button><p class="reel-cap">тут они в себя поверили</p><i class="vbar"></i></div>
     </div>
     <div class="dots" id="reelDots"><i class="on"></i><i></i><i></i><i></i></div>
   </section>
@@ -219,7 +219,7 @@
   <section class="chapter" id="babies">
     <h2 class="h">наши малявки<svg class="squiggle" viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M2 12 C 60 2, 130 18, 190 8 S 260 12, 298 6"/></svg></h2>
     <div class="phone reveal" data-knot>
-      <div class="phone-body"><img src="media/img/babies.jpg" alt="" decoding="async" data-lb data-lb-group="babies" data-cap="наши малыши буда и леви"></div>
+      <div class="phone-body"><img src="media/img/babies.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="babies" data-cap="наши малыши буда и леви"></div>
       <p class="cap-hand">наши малыши буда и леви</p>
       <span class="float-h h1"><svg><use href="#i-heart"/></svg></span>
       <span class="float-h h2"><svg><use href="#i-paw"/></svg></span>
@@ -233,15 +233,15 @@
     <p class="hint">тапни на фоточку, чтобы рассмотреть</p>
     <div class="wall">
       <figure class="polaroid wide reveal" style="--r:2deg" data-knot>
-        <img src="media/img/stingers.jpg" alt="" decoding="async" data-lb data-lb-group="future" data-cap="наши парные стингеры в будущем">
+        <img src="media/img/stingers.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="future" data-cap="наши парные стингеры в будущем">
         <figcaption>наши парные стингеры в будущем</figcaption>
       </figure>
       <figure class="polaroid reveal" style="--r:-2.8deg" data-knot>
-        <img src="media/img/cat-cafe.jpg" alt="" decoding="async" data-lb data-lb-group="future" data-cap="наши планы открыть кафе с котиками">
+        <img src="media/img/cat-cafe.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="future" data-cap="наши планы открыть кафе с котиками">
         <figcaption>наши планы открыть кафе с котиками</figcaption>
       </figure>
       <figure class="polaroid reveal" style="--r:2.6deg" data-knot>
-        <img src="media/img/future-kittens.jpg" alt="" decoding="async" data-lb data-lb-group="future" data-cap="заведем таких котят как съедемся">
+        <img src="media/img/future-kittens.jpg" alt="" decoding="async" loading="lazy" data-lb data-lb-group="future" data-cap="заведем таких котят как съедемся">
         <figcaption>заведем таких котят как съедемся</figcaption>
       </figure>
     </div>
@@ -287,8 +287,8 @@
     <button class="sleepy" id="sleepyCat" type="button" aria-label="спящий котик">
       <span class="sleepy-bubble" id="sleepyBubble">мрр… сплю…</span>
       <span class="sleepy-stage" aria-hidden="true">
-        <img class="sl-img sl-asleep" src="media/img/cat-sleep.webp?v=3" alt="" decoding="async">
-        <img class="sl-img sl-awake" src="media/img/cat-sleep-woke.webp?v=3" alt="" decoding="async">
+        <img class="sl-img sl-asleep" src="media/img/cat-sleep.webp?v=3" alt="" decoding="async" loading="lazy">
+        <img class="sl-img sl-awake" src="media/img/cat-sleep-woke.webp?v=3" alt="" decoding="async" loading="lazy">
       </span>
       <span class="z z1">z</span><span class="z z2">z</span><span class="z z3">z</span>
     </button>
@@ -312,7 +312,7 @@
   <button class="pl-btn" id="nextBtn" aria-label="следующая"><svg><use href="#i-next"/></svg></button>
   <div class="pl-list" id="plList"></div>
 </div>
-<audio id="audio" preload="auto" playsinline></audio>
+<audio id="audio" preload="none" playsinline></audio>
 
 <!-- lightbox -->
 <div class="lb" id="lb" aria-hidden="true">
@@ -326,6 +326,6 @@
   </div>
 </div>
 
-<script src="app.js?v=13"></script>
+<script src="app.js?v=14"></script>
 </body>
 </html>
